@@ -1,7 +1,7 @@
 JAVA REST Application
 ====================
 
-sample web project that demonstrates the use of:
+Technology used:
 
  * Jersey + JAX-RS
  * Spring Integration
@@ -14,35 +14,20 @@ sample web project that demonstrates the use of:
  * Login/Sign Up + Email Verification
  * JSR 303 Validation
 
- NOTE. For a similar project that uses most of the same components but is built around OAuth2 see
-  <a href="http://porterhead.blogspot.co.uk/2014/05/securing-rest-services-with-spring.html">Securing Rest Services with OAuth2 and Spring Security</a>
+Run the application:
+Open up git bash and locate to the following directory: C:\Users\Administrator\git\rest-java
+Once there, there is two things that can be done. It is advised to do this for testing.
 
-to build:
+1) Run the following command for testing purposes: ./gradlew clean build integrationTest
 
-gradle clean build integrationTest
+2) To run the application on a web-browser run the following command: ./gradlew tomcatRun
 
-or use the gradle wrapper:
+The 1st command is not always needed, as for the 2nd command, it is always needed when you would like to run the application.
 
-./gradlew clean build integrationTest
+To access the application, go to either Google Chrome or Internet Explorer and on the searchbar type in the following URL link: http://localhost:8080/java-rest/
 
-go to /build/reports/emma for test coverage reports
 
-to run:
 
-gradle tomcatRun
 
-navigate to http://localhost:8080/java-rest/
 
-see blog posts:
-
-<ul>
-<li><a href="http://porterhead.blogspot.co.uk/2013/01/writing-rest-services-in-java-part-1.html">Part 1: An introduction to writing REST Services in Java</a></li>
-<li><a href="http://porterhead.blogspot.co.uk/2013/01/writing-rest-services-in-java-part-2.html">Part 2: User sign up and login</a></li>
-<li><a href="http://porterhead.blogspot.co.uk/2013/01/writing-rest-services-in-java-part-3.html">Part 3: Email Verification</a></li>
-<li><a href="http://porterhead.blogspot.co.uk/2013/01/writing-rest-services-in-java-part-4.html">Part 4: Facebook Authentication</a></li>
-<li><a href="http://porterhead.blogspot.co.uk/2013/01/writing-rest-services-in-java-part-5.html">Part 5: Lost Password</a></li>
-<li><a href="http://porterhead.blogspot.co.uk/2013/01/writing-rest-services-in-java-part-6.html">Part 6: Security &amp; Authorization</a></li>
-<li><a href="http://porterhead.blogspot.co.uk/2013/03/writing-rest-services-in-java-part-7.html">Part 7: Moving to Production</a></li>
-<li><a href="http://porterhead.blogspot.co.uk/2013/05/writing-rest-services-in-java-part-8.html">Part 8: JSR 303 Validation</a></li>
-</ul>
 
