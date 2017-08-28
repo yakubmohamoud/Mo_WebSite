@@ -1,4 +1,4 @@
-**JAVA REST Application
+#JAVA REST Application
 ====================
 
 Technology used:
@@ -14,7 +14,7 @@ Technology used:
  * Login/Sign Up + Email Verification
  * JSR 303 Validation
 
-**Run the application
+##Run the application
 Open up git bash and locate to the following directory: C:\Users\Administrator\git\rest-java
 Once there, there is two things that can be done. It is advised to do this for testing.
 
