@@ -1,112 +1,144 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Sample Java Rest Application</title>
-    <link href="css/styles.css" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  </head>
-  <body>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/tether.min.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  <script src="js/tether.min.js"></script>
+  <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
 
-    <div id="container">
+  <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">Monetize Fashion</a>
 
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Workshop</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="partners.html">Partners</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Start Your Brand</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Store</a>
+        </li>
+      </ul>
 
-      <div id="fb-root"></div>
+    </div>
+  </nav>
 
-      <div class="fb" scope="email" data-show-faces="false" data-width="300">Login with Facebook</div>
+  <div class="container-fluid">
+    <div class="d-flex flex-row-reverse top-right-links">
+      <div class="p-2"><a href="signup.html">Sign Up</a></div>
+      <div class="p-2"><a href="loginPage.html">Login</a></div>
+    </div>
+    <div class="jumbotron jumbotron-fluid big-image">
+    </div>
+    <div class="mx-auto featured-text"><h1>Featured</h1>
+    </div>
 
-      <div id="or"><span>Or</span></div>
+    <div class="container-fluid bg-3 text-center">
+      <div class="thumbnails">
+        <div class="row">
+          <div class="col-sm-4 thumbnail">
+            <span class="thumbnail-title">Item 1</span>
+            <img src="thumbnail.png" class="img-responsive" style="width:80%" alt="Image">
+          </div>
+          <div class="col-sm-4 thumbnail">
+            <span class="thumbnail-title">Item 1</span>
+            <img src="thumbnail.png" class="img-responsive" style="width:80%" alt="Image">
+          </div>
+          <div class="col-sm-4 thumbnail">
+            <span class="thumbnail-title">Item 1</span>
+            <img src="thumbnail.png" class="img-responsive" style="width:80%" alt="Image">
+          </div>
+        </div>
 
+        <div class="row">
+          <div class="col-sm-4 thumbnail">
+            <span class="thumbnail-title">Item 1</span>
+            <img src="thumbnail.png" class="img-responsive" style="width:80%;" alt="Image">
+          </div>
+          <div class="col-sm-4 thumbnail">
+            <span class="thumbnail-title">Item 1</span>
+            <img src="thumbnail.png" class="img-responsive" style="width:80%" alt="Image">
+          </div>
+          <div class="col-sm-4 thumbnail">
+            <span class="thumbnail-title">Item 1</span>
+            <img src="thumbnail.png" class="img-responsive" style="width:80%" alt="Image">
+          </div>
+        </div>
 
-      <input id="email" type="email" placeholder="Email">
-
-
-	    <input id="password" type="password" placeholder="Password">
-
-
-	    <div id="error_message"></div>
-
-
-  	  <button class="small_button" type="submit" id="login_button">Login</button>
-
-	    <a href="signup.html" class="right_link">Sign Up</a><br>
-
-      <a id="forgot" href="forgot_password.html">Forgot Password</a>
+      </div>
 
     </div>
 
 
-    <script src="js/jquery-1.8.2.min.js"></script>
-    <script src="js/javarest.js"></script>
-    <script src="js/cookie.js"></script>
-    <script src="js/user.js"></script>
-    <script type="text/javascript">
 
-    $(document).ready(function () {
+  </div>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <h3>Information</h3>
+          <ul class="information">
+            <li>About Us</li>
+            <li>Delivery Information</li>
+            <li>Sign up to our promotional events</li>
+          </ul>
+        </div>
+        <div class="col-sm-4">
+          <h3>Location</h3>
+          <ul class="information">
+            <li>First line of address</li>
+            <li>Town</li>
+            <li>Postcode</li>
+          </ul>
+        </div>
+        <div class="col-sm-4">
+          <h3>Links</h3>
+          <div class="row links">
+            <div class="col">1</div>
+            <div class="col">2</div>
+            <div class="col">3</div>
+            <div class="col">4</div>
+          </div>
+        </div>
+      </div>
 
+        <div class="row">
+          <div class="col-sm-12">
+            <h3>Also Visit</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-4">
+            Manufacturer.monetizefashion.co.uk
+          </div>
+          <div class="col-sm-4">
+            boutique.monetizefashion.co.uk
+          </div>
+          <div class="col-sm-4">
+            designer.monetizefashion.co.uk
+          </div>
+        </div>
+    </div>
 
-
-        window.fbAsyncInit = function() {
-          FB.init({
-            appId      : '101664790550630', // App ID
-            status     : true, // check login status
-            cookie     : true, // enable cookies to allow the server to access the session
-            xfbml      : true  // parse XFBML
-          });
-
-          $('.fb').on('click', function () {
-
-             FB.login(function(response) {
-               console.log(response)
-                 if (response.authResponse) {
-
-                   javaRest.user.loginSocial(response.authResponse.accessToken, function (error) {
-                     if (error)
-                       console.log(error)
-                      else
-                       window.location = 'dashboard.html'
-                   })
-                   console.log('Welcome!  Fetching your information.... ');
-                   FB.api('/me', function(response) {
-                     console.log('Good to see you, ' + response.name + '.');
-                   });
-                 } else {
-                   console.log('User cancelled login or did not fully authorize.');
-                 }
-               });
-
-          })
-
-        };
-        // Load the SDK Asynchronously
-        (function(d){
-           var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
-           if (d.getElementById(id)) {return;}
-           js = d.createElement('script'); js.id = id; js.async = true;
-           js.src = "//connect.facebook.net/en_US/all.js";
-           ref.parentNode.insertBefore(js, ref);
-         }(document));
-
-
-      // Submit form on enter
-      $('input').live('keydown', function (event) {
-        if (event.keyCode === 13)
-          $('#login_button').click()
-      })
-
-      if (javaRest.user.is_logged_in())
-        window.location = 'dashboard.html'
-      $('#login_button').on('click', function () {
-        javaRest.user.login($('#email').val(), $('#password').val(), function (error) {
-          if (!error)
-            window.location = 'dashboard.html'
-          else {
-            console.log(error)
-            $('#error_message').html('Email and/or password did not match a user account.').show()
-          }
-        })
-      })
-
-    })
-    </script>
-  </body>
+  </footer>
+  <div class="copyright">
+    &copy; Your Website 2017
+  </div>
+</body>
 </html>
